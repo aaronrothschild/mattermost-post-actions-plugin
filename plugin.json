@@ -1,0 +1,28 @@
+{
+    "id": "post-actions-plugin",
+    "name": "Post actions",
+    "description": "This plugin provide actions over posts through the '...' button.",
+    "version": "0.0.1",
+    "server": {
+        "executables": {
+            "linux-amd64": "server/dist/plugin-linux-amd64",
+            "darwin-amd64": "server/dist/plugin-darwin-amd64",
+            "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        }
+    },
+    "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+    },
+    "settings_schema": {
+        "header": "",
+        "footer": "",
+        "settings": [
+            {
+                "key": "menu",
+                "display_name": "Post actions menu",
+                "type": "text",
+                "help_text": "This must be a valid json text"
+            }
+        ]
+    }
+}
